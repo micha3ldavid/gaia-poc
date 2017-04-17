@@ -1,0 +1,33 @@
+
+.panel {
+	position: relative;
+}
+
+.panel-heading,
+.panel-body,
+.panel-footer,
+.panel-controls {
+	@include container;
+	padding: gutters(6);
+}
+
+.panel-footer {
+	text-align: center;
+}
+
+.panel-videolist {
+
+	.panel-filter {
+		text-align: center;
+
+		@media screen and (min-width: $breakpoint-md) {
+			float: right;
+			text-align: left;
+		}
+	}
+
+	.panel-filter-title {
+		font-size: $font-sm;
+		text-transform: uppercase;
+	}
+}

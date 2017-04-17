@@ -1,0 +1,18 @@
+
+.btn {
+	background-color: $gray-1;
+	border: 0;
+	color: $theme-primary;
+	padding: 10px;
+	text-transform: uppercase;
+
+	&.btn-bar {
+		min-width: 300px;
+		text-align: center;
+	}
+
+	&:disabled {
+		background: $gray-5;
+		cursor: default;
+	}
+}

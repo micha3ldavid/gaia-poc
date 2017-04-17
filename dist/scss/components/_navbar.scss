@@ -1,0 +1,107 @@
+
+.navbar {
+	position: relative;
+}
+
+.navbar-header {
+	border-bottom: 1px solid $gray-5;
+	padding: 15px gutters(6);
+	position: relative;
+}
+
+.navbar-title {
+	line-height: 1;
+}
+
+.navbar-logo {
+	margin-left: 50px;
+	@media screen and (min-width: $breakpoint-md) {
+		margin-left: 0;
+	}
+}
+
+.navbar-actions {
+	position: absolute;
+	right: gutters(6);
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.navbar-footer {
+	@include container;
+	background-color: $gray-6;
+	padding: 0 gutters(6);
+}
+
+.navbar-nav {
+	@include span(9 of 12);
+	display: none;
+	font-size: $font-sm;
+	margin: 0;
+
+	@media screen and (min-width: $breakpoint-md) {
+		display: block;
+	}
+}
+
+.navbar-search {
+	margin: 0;
+	padding: 9px 0;
+
+	@media screen and (min-width: $breakpoint-md) {
+		@include span(3 of 12 last);
+	}
+}
+
+.navbar-mobile {
+	width: 100%;
+
+	@media screen and (min-width: $breakpoint-md) {
+		display: none;
+	}
+}
+
+.navbar-mobile .hamburger {
+	left: gutters(6);
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.navbar-mobile-nav {
+	background: $theme-primary;
+	bottom: 0;
+	top: 118px;
+	position: fixed;
+	transition: opacity $transition-speed;
+	left: -100%;
+	opacity: 0;
+	width: 100%;
+	z-index: 2;
+
+	&[aria-hidden="false"] {
+		left: 0;
+		opacity: 1;
+	}
+
+	@media screen and (min-width: $breakpoint-md) {
+		&[aria-hidden="false"] {
+			left: -100%;
+			opacity: 0;
+		}
+	}
+}
+
+.navbar-mobile-nav .nav {
+	display: block;
+
+	.nav-item {
+		float: none;
+		border-bottom: 1px solid $gray-5;
+	}
+
+	.nav-item:first-child .nav-link,
+	.nav-link {
+		padding: gutters(8) gutters(6);
+	}
+}

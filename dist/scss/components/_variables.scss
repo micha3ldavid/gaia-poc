@@ -1,0 +1,51 @@
+
+$columns: 12;
+$gutters: 1/4;
+$gutters-px: 15px;
+
+$theme-primary: #fff;
+
+$brand-primary: #00c9c9;
+$brand-secondary: #ff5548;
+
+$gray-1: #44576b;
+$gray-2: #4a4a4a;
+$gray-3: #5c738a;
+$gray-4: #92a3b3;
+$gray-5: #d1d9e2;
+$gray-6: #f4f5f6;
+
+$font-xs: 0.6rem;
+$font-sm: 0.8rem;
+$font-base: 1rem;
+$font-lg: 1.2rem;
+$font-xl: 1.4rem;
+
+$font-h1: 2.2rem;
+$font-h2: 2rem;
+$font-h3: 1.8rem;
+$font-h4: 1.4rem;
+$font-h5: 1rem;
+$font-h6: 0.8rem;
+
+$transition-speed: 0.5s;
+
+$breakpoint-sm: 550px;
+$breakpoint-md: 819px;
+$breakpoint-lg: 1080px;
+
+// Mk[ui] variable overrides
+
+$mk-primary: $brand-primary;
+$mk-secondary: $brand-primary;
+$mk-padding: 10px;
+$mk-margin: 10px;
+
+$mk-gray-1: $gray-1;
+$mk-gray-2: $gray-2;
+$mk-gray-3: $gray-3;
+$mk-gray-4: $gray-4;
+$mk-gray-5: $gray-5;
+$mk-gray-6: $gray-6;
+
+$mk-sm-option-selected-char: "";

@@ -1,0 +1,23 @@
+
+.nav {
+	@include container;
+}
+
+.nav-item {
+	float: left;
+
+	&:first-child .nav-link {
+		padding-left: 0;
+	}
+
+	&:last-child .nav-link {
+		padding-right: 0;
+	}
+}
+
+.nav-link {
+	display: block;
+	font-size: $font-sm;
+	padding: 18px 8px;
+	text-transform: uppercase;
+}

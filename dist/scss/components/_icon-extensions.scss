@@ -1,0 +1,15 @@
+
+.icon-lg.icon,
+.icon-lg .icon {
+	font-size: $font-h2;
+}
+
+.icon-lg .icon-label {
+	position: relative;
+	top: -0.3rem;
+}
+
+.icon-rotate {
+	position: absolute;
+	transform: rotate(90deg);
+}

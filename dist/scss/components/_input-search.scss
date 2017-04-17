@@ -1,0 +1,25 @@
+
+.input-search {
+	border: 1px solid #d1d9e2;
+	position: relative;
+}
+
+.input-search-input,
+.input-search-button {
+	background-color: transparent;
+	border: 0;
+	box-sizing: border-box;
+	color: #44576b;
+	padding: 5px 30px 5px 10px;
+}
+
+.input-search-input {
+	width: 100%;
+}
+
+.input-search-button {
+	padding-right: 10px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}

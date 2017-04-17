@@ -1,0 +1,41 @@
+
+.card-list {
+	@include container;
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	margin: gutters(6) 0;
+}
+
+.card-list-item {
+	margin-bottom: gutters(6);
+}
+
+@media screen and (min-width: $breakpoint-sm) {
+
+	.card-list {
+		margin-right: $gutters-px * -1;
+		margin-left: $gutters-px * -1;
+	}
+
+	.card-list .card-list-item {
+		flex: 1 0 calc(50% - #{$gutters-px});
+		margin-left: $gutters-px;
+	}
+}
+
+@media screen and (min-width: $breakpoint-md) {
+
+	.card-list .card-list-item {
+		flex: 1 0 calc(33.3% - #{$gutters-px});
+	}
+}
+
+@media screen and (min-width: $breakpoint-lg) {
+
+	.card-list .card-list-item {
+		flex: 1 0 calc(25% - #{$gutters-px});
+		margin-left: $gutters-px;
+	}
+}

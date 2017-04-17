@@ -1,0 +1,18 @@
+
+.mk-sm-trigger {
+	border: 1px solid $gray-1;
+
+	&:before {
+		font-size: $font-h2;
+		top: 3px;
+	}
+}
+
+.mk-sm-input {
+	padding: 5px 10px;
+}
+
+.mk-sm-option,
+.mk-sm-optgroup {
+	font-size: 100%;
+}

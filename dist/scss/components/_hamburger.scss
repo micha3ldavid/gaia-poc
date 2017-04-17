@@ -1,0 +1,47 @@
+
+.hamburger {
+	background: transparent;
+	border: 0;
+	height: 25px;
+	padding: 0;
+	position: relative;
+	width: 25px;
+
+	&:before,
+	&:after {
+		content: "";
+		border-top: 3px solid $gray-1;
+		width: 100%;
+		display: block;
+		position: absolute;
+		transition: transform 0.25s, border-color 0.5s;
+		transform-origin: left center;
+	}
+
+	&:before {
+		border-bottom: 3px solid $gray-1;
+		height: 6px;
+		left: 0;
+		top: 2px;
+	}
+
+	&:after {
+		height: 0;
+		left: 0;
+		bottom: 2px;
+	}
+}
+
+.hamburger.active {
+
+	&:before {
+		border-bottom-color: white;
+		border-bottom-width: 0;
+		height: 0;
+		transform: rotate(45deg);
+	}
+
+	&:after {
+		transform: rotate(-45deg);
+	}
+}

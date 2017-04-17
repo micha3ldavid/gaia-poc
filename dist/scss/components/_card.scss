@@ -1,0 +1,51 @@
+
+.card {
+	box-sizing: border-box;
+}
+
+.card-img img {
+	width: 100%;
+}
+
+.card-subtitle {
+	color: $gray-4;
+	font-size: $font-sm;
+	font-style: italic;
+	margin-bottom: 5px;
+}
+
+.card-title {
+	font-size: $font-base;
+}
+
+.card-body {
+	padding: ($gutters-px / 2) 0;
+	position: relative;
+}
+
+.card-likes {
+	color: $gray-4;
+	font-size: $font-base;
+	position: absolute;
+	top: $gutters-px / 2;
+	right: 0;
+}
+
+.card-meta {
+	color: $gray-4;
+	font-size: $font-sm;
+}
+
+.card-meta-season,
+.card-meta-duration,
+.card-meta-episode {
+	display: inline-block;
+}
+
+.card-meta-episode {
+	padding-right: gutters(6);
+}
+
+.card-meta-duration {
+	display: block;
+}
