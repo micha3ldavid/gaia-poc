@@ -27,6 +27,7 @@ View this project example on localhost by doing the following:
 
 ```bash
 # git clone https://github.com/micha3ldavid/gaia-poc.git gaia-poc
+# cd gaia-poc
 # npm install
 # npm run start
 ```
