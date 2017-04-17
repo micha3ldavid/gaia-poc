@@ -22683,27 +22683,20 @@ var ScrollReset = function (_React$Component) {
 		var _this = _possibleConstructorReturn(this, (ScrollReset.__proto__ || Object.getPrototypeOf(ScrollReset)).call(this, props));
 
 		_this.state = {
-			onScroll: _this.onScroll.bind(_this),
 			onClick: _this.onClick.bind(_this)
 		};
 		return _this;
 	}
 
 	_createClass(ScrollReset, [{
-		key: 'onScroll',
-		value: function onScroll(e) {
-
-			console.info('scrolling');
-		}
-	}, {
-		key: 'onClick',
+		key: "onClick",
 		value: function onClick(e) {
 
 			e.preventDefault();
 			this.resetWindowScroll();
 		}
 	}, {
-		key: 'resetWindowScroll',
+		key: "resetWindowScroll",
 		value: function resetWindowScroll() {
 
 			var intervalId = null;;
@@ -22720,17 +22713,16 @@ var ScrollReset = function (_React$Component) {
 			}, 1);
 		}
 	}, {
-		key: 'render',
+		key: "render",
 		value: function render() {
 
 			return _react2.default.createElement(
-				'button',
+				"button",
 				{
-					className: 'btn pull-right',
-					'aria-hidden': 'true',
-					onScroll: this.state.onScroll,
+					className: "btn pull-right",
+					"aria-hidden": "true",
 					onClick: this.state.onClick },
-				_react2.default.createElement('span', { className: 'icon icon-angle-up' })
+				_react2.default.createElement("span", { className: "icon icon-angle-up" })
 			);
 		}
 	}]);

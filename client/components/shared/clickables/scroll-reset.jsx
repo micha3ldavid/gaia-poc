@@ -8,14 +8,8 @@ class ScrollReset extends React.Component {
 		super(props);
 
 		this.state = {
-			onScroll: this.onScroll.bind(this),
 			onClick: this.onClick.bind(this)
 		};
-	}
-
-	onScroll (e) {
-
-		console.info('scrolling');
 	}
 
 	onClick (e) {
@@ -47,7 +41,6 @@ class ScrollReset extends React.Component {
 			<button
 				className="btn pull-right"
 				aria-hidden="true"
-				onScroll={this.state.onScroll}
 				onClick={this.state.onClick}>
 					<span className="icon icon-angle-up"></span>
 			</button>
