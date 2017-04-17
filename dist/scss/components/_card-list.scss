@@ -1,6 +1,6 @@
 
 .card-list {
-	@include container;
+	box-sizing: border-box;
 	display: -ms-flex;
 	display: -webkit-flex;
 	display: flex;
@@ -9,19 +9,20 @@
 }
 
 .card-list-item {
+	box-sizing: border-box;
 	margin-bottom: gutters(6);
 }
 
 @media screen and (min-width: $breakpoint-sm) {
 
 	.card-list {
-		margin-right: $gutters-px * -1;
-		margin-left: $gutters-px * -1;
+		margin-right: ($gutters-px / 2) * -1;
+		margin-left: ($gutters-px / 2) * -1;
 	}
 
 	.card-list .card-list-item {
 		flex: 1 0 calc(50% - #{$gutters-px});
-		margin-left: $gutters-px;
+		padding: 0 ($gutters-px / 2);
 	}
 }
 
@@ -36,6 +37,5 @@
 
 	.card-list .card-list-item {
 		flex: 1 0 calc(25% - #{$gutters-px});
-		margin-left: $gutters-px;
 	}
 }
